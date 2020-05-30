@@ -6,7 +6,7 @@ import { ScullyRoutesService } from '@scullyio/ng-lib';
 @Component({
   selector: 'app-main-nav',
   templateUrl: './main-nav.component.html',
-  styleUrls: ['./main-nav.component.scss'],
+  styleUrls: ['./main-nav.component.css'],
 })
 export class MainNavComponent {
   isHandset$: Observable<boolean> = this.breakpointObserver
