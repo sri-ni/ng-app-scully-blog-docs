@@ -1,7 +1,6 @@
 ---
 title: Blog two
 description: 'blog two description'
-published: true
 slugs:
     - blog-two
 
