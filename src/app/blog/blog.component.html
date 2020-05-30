@@ -1,0 +1,15 @@
+<h1>Blog</h1>
+
+<h2 *ngFor="let route of routerService.available$ | async ">
+  <a *ngIf="route.route.indexOf('blog') !== -1" [routerLink]="route.route">{{route.title}}</a>
+</h2>
+
+<!--<scully-content></scully-content>-->
+
+<ul aria-label="Blog posts">
+  <li *ngFor="let blog of $blogPosts | async">
+    <a [routerLink]="blog.route">
+      {{blog.title}} by {{blog.authorName}}
+    </a>
+  </li>
+</ul>

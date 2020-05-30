@@ -1,0 +1,7 @@
+<h1>Docs</h1>
+
+<h2 *ngFor="let route of routerService.available$ | async ">
+  <a *ngIf="route.route.indexOf('docs') !== -1" [routerLink]="route.route">{{route.title}}</a>
+</h2>
+
+<scully-content></scully-content>
